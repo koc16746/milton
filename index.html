@@ -1864,29 +1864,54 @@
             <button class="btn btn-navy" style="font-size:0.85rem; padding:8px 16px;" onclick="openEventModal('Monthly Council Meeting', 'Every 4th Thursday of each month at 7:30 PM', 'Saint Benedict Parish Hall, 300 Yates Drive, Milton', 'General business and fraternal gathering for all initiated brother Knights. Practicing Catholic men considering joining are welcome to introduce themselves to the Grand Knight prior to the meeting.')">Event Details</button>
           </div>
         </div>
-
-        <!-- EVENT 2: Columbian Membership Drive -->
+<!-- EVENT 2: Children Christmas Party -->
         <div class="event-item" data-type="community">
           <div class="event-date-box">
-            <div class="event-month">OCTOBER</div>
-            <div class="event-day">24-25</div>
+            <div class="event-month">NOVEMBER</div>
+            <div class="event-day">28</div>
             <div class="event-time-badge">Weekend</div>
           </div>
           <div class="event-content">
             <span class="event-badge" style="background:#fef3c7; color:#92400e; margin-bottom:4px; display:inline-block;">Parish Drive</span>
-            <h4>Fall Columbian Membership Drive</h4>
+            <h4>Children's Christams Party</h4>
             <p>
-              Knights will be available in the narthex / church foyer following all Saturday and Sunday Masses to answer questions, explain fraternal benefits, and welcome new brothers into Council 16746.
+              St. Benedict Parish invites all children ages 3 to 12 to our annual Children’s Christmas Party on Saturday, November 28, from 2:00 PM to 4:30 PM in the Church Hall.
+
+Join us for an afternoon of food, games, Christmas fun, and a special visit from Santa Claus!
+
+Tickets are $15 per child. Please register using the QR code on our event poster.
+
+We look forward to celebrating the Christmas season with our parish families!
             </p>
             <div class="event-loc">
               <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              <span>Saint Benedict Church Foyer • After All Masses</span>
+              <span>Saint Benedict Church Foyer • 2.00 to 4.30 PM</span>
             </div>
           </div>
           <div class="event-action">
-            <button class="btn btn-gold" style="font-size:0.85rem; padding:8px 16px;" onclick="openEventModal('Columbian Membership Drive', 'Following Saturday 5:00 PM & Sunday 9:00 AM, 10:30 AM, 12:00 PM Masses', 'Saint Benedict Parish Foyer, 300 Yates Dr, Milton', 'Meet brother Knights and learn how you can serve our parish while protecting your family with top-rated fraternal benefits. Online membership is free for your first year with promo code.')">Learn More</button>
+            <button class="btn btn-gold" style="font-size:0.85rem; padding:8px 16px;" onclick="toggleQR()" style="padding: 10px 20px; cursor: pointer;">
+  Show QR Code
+</button>
+
+<!-- 2. The Hidden QR Code Container -->
+<div id="qr-container" style="display: none; margin-top: 15px;">
+  <img src="images/my-qr-code.png" alt="Scan QR Code" width="200" height="200">
+</div>
+
+<!-- 3. The Toggle Script -->
+<script>
+  function toggleQR() {
+    const qrBox = document.getElementById("qr-container");
+    if (qrBox.style.display === "none") {
+      qrBox.style.display = "block";
+    } else {
+      qrBox.style.display = "none";
+    }
+  }
+</script>
           </div>
         </div>
+        
 
         <!-- EVENT 3: Christmas Bazaar & Hamper Drive -->
         <div class="event-item" data-type="community">
@@ -1910,7 +1935,28 @@
             <button class="btn btn-navy" style="font-size:0.85rem; padding:8px 16px;" onclick="openEventModal('Christmas Bazaar & Hamper Appeal', 'Saturday, November 14 • 9:00 AM - 3:30 PM', 'Saint Benedict Parish Hall', 'Support our parish and bring non-perishable food items or gift cards. Vendor tables and volunteer signups available by emailing koc16746@gmail.com.')">Event Details</button>
           </div>
         </div>
-
+<!-- EVENT 2: Columbian Membership Drive -->
+        <div class="event-item" data-type="community">
+          <div class="event-date-box">
+            <div class="event-month">OCTOBER</div>
+            <div class="event-day">24-25</div>
+            <div class="event-time-badge">Weekend</div>
+          </div>
+          <div class="event-content">
+            <span class="event-badge" style="background:#fef3c7; color:#92400e; margin-bottom:4px; display:inline-block;">Parish Drive</span>
+            <h4>Fall Columbian Membership Drive</h4>
+            <p>
+              Knights will be available in the narthex / church foyer following all Saturday and Sunday Masses to answer questions, explain fraternal benefits, and welcome new brothers into Council 16746.
+            </p>
+            <div class="event-loc">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>Saint Benedict Church Foyer • After All Masses</span>
+            </div>
+          </div>
+          <div class="event-action">
+            <button class="btn btn-gold" style="font-size:0.85rem; padding:8px 16px;" onclick="openEventModal('Columbian Membership Drive', 'Following Saturday 5:00 PM & Sunday 9:00 AM, 10:30 AM, 12:00 PM Masses', 'Saint Benedict Parish Foyer, 300 Yates Dr, Milton', 'Meet brother Knights and learn how you can serve our parish while protecting your family with top-rated fraternal benefits. Online membership is free for your first year with promo code.')">Learn More</button>
+          </div>
+        </div>
         <!-- EVENT 4: Annual Rosary Rally -->
         <div class="event-item" data-type="faith">
           <div class="event-date-box">
